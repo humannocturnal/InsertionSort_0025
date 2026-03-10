@@ -26,3 +26,13 @@ void input () {
         cin >> arr[i];
     }
 }
+
+void insertionSort() { //procedure insertion sort
+    int temp;
+    int j;
+
+    for (int i = 0; i < n; i++) {
+        int key = arr[i];
+        int j = i - 1;
+    }
+}
