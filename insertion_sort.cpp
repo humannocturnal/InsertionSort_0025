@@ -18,7 +18,7 @@ void input () {
     }
      cout << endl;
     cout << "=====================================================";
-    cout << "===============Masuakkan Element Array===============";
+    cout << "===============Masukan Element Array=================";
     cout << "=====================================================";
 
     for (int i = 0; i < n; i++) {
@@ -31,16 +31,17 @@ void insertionSort() { //procedure insertion sort
     int temp;
     int j;
 
-    for (int i = 0; i < n; i++) {
-        int key = arr[i];
-        int j = i - 1;
+    for (int i = 0; i < n; i++) 
+    {
+        temp = arr[i];
+        j = i - 1;
         while (j >= 0 && arr[j] > temp)
         {
             arr[j + 1] = arr[j];
             j--;
         }
         arr[j + 1] = temp;
-        cout << "\nStep" << i << ":";
+        cout << "\nStep" << i << ": ";
         for (int k = 0; k < n; k++) 
         {
             cout << arr[k] << " ";
